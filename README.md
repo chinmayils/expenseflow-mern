@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ExpenseFlow — MERN Stack Expense Tracker
 
 A full-stack personal finance application. The existing React/Vite interface is retained and connected to an Express REST API backed by MongoDB.
@@ -116,3 +117,7 @@ All endpoints are prefixed with `/api`. Except for registration, login and healt
 - Receipt selection in the current UI is still a visual placeholder; file upload/storage is not connected.
 - Password reset and password change are not implemented yet.
 - The dashboard and reports calculate their summaries from the authenticated user's transaction records.
+=======
+# expenseflow-mern
+Expense tracker mern project
+>>>>>>> 026da37decc2c6d850eba52d2719f5f40cc4499f
