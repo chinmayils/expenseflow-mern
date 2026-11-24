@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ExpenseFlow — MERN Stack Expense Tracker
 
 A full-stack personal finance application. The existing React/Vite interface is retained and connected to an Express REST API backed by MongoDB.
@@ -16,7 +15,7 @@ A full-stack personal finance application. The existing React/Vite interface is 
 
 ## Run the application
 
-Open **two terminals** in the `expense-tracker-frontend` project folder.
+Open two terminals in the `expense-tracker-frontend` project folder.
 
 ### 1. Start MongoDB
 For a local MongoDB installation, start the MongoDB service. The default connection is:
@@ -29,17 +28,22 @@ Alternatively, create a MongoDB Atlas database and use its connection string in 
 cd backend
 npm install
 ```
-Copy `backend/.env.example` to `backend/.env` and set a long random `JWT_SECRET`. Example:
+
+Copy `backend/.env.example` to `backend/.env` and set a long random `JWT_SECRET`.
+
+Example:
 ```env
 PORT=5000
 MONGODB_URI=mongodb://127.0.0.1:27017/expenseflow
 JWT_SECRET=put_a_long_random_secret_here
 CLIENT_URL=http://localhost:5173
 ```
+
 Then run:
 ```bash
 npm run dev
 ```
+
 The API runs at `http://localhost:5000`. Check `http://localhost:5000/api/health`.
 
 ### 3. Configure and start the frontend
@@ -47,14 +51,16 @@ In a second terminal, return to the project root (`expense-tracker-frontend`):
 ```bash
 npm install
 ```
-Copy `.env.example` to `.env` (the default API URL is already correct), then:
+
+Copy `.env.example` to `.env`, then:
 ```bash
 npm run dev
 ```
+
 Open the Vite URL, normally `http://localhost:5173`.
 
 ## First use
-1. Open the app and choose **Create one**.
+1. Open the app and choose Create one.
 2. Register with your name, email, and a password of at least 8 characters.
 3. Add income and expense transactions.
 4. Review the dashboard, reports, categories and monthly budget.
@@ -68,17 +74,17 @@ expense-tracker-frontend/
 ├── backend/
 │   ├── src/
 │   │   ├── middleware/auth.js
-│   │   ├── models/           User, Transaction, Category, Budget
-│   │   ├── routes/           auth, transactions, categories, budgets, reports
+│   │   ├── models/ User, Transaction, Category, Budget
+│   │   ├── routes/ auth, transactions, categories, budgets, reports
 │   │   └── server.js
 │   ├── .env.example
 │   └── package.json
 ├── src/
 │   ├── components/
-│   ├── context/              AuthContext and ExpenseContext
+│   ├── context/
 │   ├── layouts/
 │   ├── pages/
-│   ├── services/             Axios API service modules
+│   ├── services/
 │   └── utils/
 ├── .env.example
 └── package.json
@@ -117,7 +123,4 @@ All endpoints are prefixed with `/api`. Except for registration, login and healt
 - Receipt selection in the current UI is still a visual placeholder; file upload/storage is not connected.
 - Password reset and password change are not implemented yet.
 - The dashboard and reports calculate their summaries from the authenticated user's transaction records.
-=======
-# expenseflow-mern
-Expense tracker mern project
->>>>>>> 026da37decc2c6d850eba52d2719f5f40cc4499f
+-
