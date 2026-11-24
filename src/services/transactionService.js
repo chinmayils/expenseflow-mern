@@ -1,0 +1,13 @@
+import api from './api'
+export const getTransactions = (params) => api.get('/transactions', { params })
+export const createTransaction = (data) => api.post('/transactions', data)
+export const updateTransaction = (id, data) => api.put(`/transactions/${id}`, data)
+export const deleteTransaction = (id) => api.delete(`/transactions/${id}`)
+export const clearTransactions = () => api.delete('/transactions')
+export const getCategories = () => api.get('/categories')
+export const createCategory = (data) => api.post('/categories', data)
+export const deleteCategory = (id) => api.delete(`/categories/${id}`)
+export const getBudgets = () => api.get('/budgets')
+export const createBudget = (data) => api.post('/budgets', data)
+export const deleteBudget = (id) => api.delete(`/budgets/${id}`)
+export const getReports = (params) => api.get('/reports', { params })
